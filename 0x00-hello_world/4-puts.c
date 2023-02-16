@@ -1,16 +1,14 @@
 #include<stdio.h>
 
 /**
- * main function puts output to the terminal
- * "Programming is like building a mutlilingual puzzle
+ * main - Major function in this program
+ * @void - main function does not take parameters
+ * Description- the program prints output to the screen
+ * Return: returns 0 at the end of program
  */
 
 int main(void)
 {
-
-puts("\"Programming is like building a mutlilingual puzzle");
-/**
- * Returns 0 after success 
-*/
+puts("Programming is like building a multilingual puzzle\n");
 return (0);
 }
