@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<unistd.h>
 /**
  * main - Major function in this program
  * @void - main function does not take parameters
@@ -9,6 +9,7 @@
 
 int main(void)
 {
-puts("Programming is like building a multilingual puzzle");
+write(1, "Programming is like building a multilingual puzzle", 44);
+printf("\n");
 return (0);
 }
