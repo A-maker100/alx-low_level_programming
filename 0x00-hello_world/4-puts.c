@@ -9,7 +9,6 @@
 
 int main(void)
 {
-write(1, "Programming is like building a multilingual puzzle", 44);
-printf("\n");
+puts("Programming is like building a multilingual puzzle\n");
 return (0);
 }
