@@ -4,7 +4,7 @@
  * main - Major function in this program
  * @void : function does not take any variables
  * Description : This program prints the sizes of bytes of each data type
- * Return : returns 0 at end of the program
+ * Return : returns 0 at end of the program function
  */
 
 int main(void)
