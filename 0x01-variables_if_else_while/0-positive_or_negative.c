@@ -4,10 +4,9 @@
 /**
  * main - Major function in this program
  * @void - the main function takes no parameters
- * Description: The program generates a random number and then determines whether it is neg, positive or equal to zero
- * Return : the main function returns zero when the program finishes
+ * Description: check if a random number is negative,positive or equal zero
+ * Return: returns 0 when program ends
  */
-
 
 int main(void)
 {
@@ -18,16 +17,15 @@ int main(void)
 
 	if (n < 0)
 	{
-	  printf("%d is negative\n", n);
-	  }
-
-	else if(n > 0){
-	  printf("%d is positive\n", n);
+		printf("%d is negative\n", n);
 	}
-
-	else if( n == 0)
-	  {
-	    printf("%d is zero\n", n);
-	  }
+	else if (n == 0)
+	{
+		printf("%d is equal to zero\n", n);
+	}
+	else if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
 	return (0);
 }
