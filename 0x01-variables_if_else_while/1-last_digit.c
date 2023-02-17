@@ -18,8 +18,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* Turn the number to a string */
-
-	length = snprintf(NULL, 0, "%d", n);	
+	length = snprintf(NULL, 0, "%d", n);
 	string_n = malloc(length + 1);
 
 	snprintf(string_n, length + 1, "%d", n);
@@ -34,7 +33,7 @@ int main(void)
 
 	if (last_digit > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5 \n", n, last_digit);
+		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
 	}
 
 	else if (last_digit == 0)
