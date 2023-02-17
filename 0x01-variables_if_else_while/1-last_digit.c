@@ -11,16 +11,19 @@
 int main(void)
 {
 	int n;
+	int length;
+	int last_digit;
+	char *string_n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* Turn the number to a string */
-	int length = snprintf(NULL, 0, "%d", n);
 
-	char *string_n = malloc(length + 1);
+	length = snprintf(NULL, 0, "%d", n);	
+	string_n = malloc(length + 1);
 
 	snprintf(string_n, length + 1, "%d", n);
-	int last_digit = string_n[length - 1] - 48;
+	last_digit = string_n[length - 1] - 48;
 
 	if (n < 0)
 	{
