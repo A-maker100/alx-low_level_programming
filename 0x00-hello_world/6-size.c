@@ -2,9 +2,9 @@
 
 /**
  * main - Major function in this program
- * @void : function does not take any variables
- * Description : This program prints the sizes of bytes of each data type
- * Return : returns 0 at end of the program function
+ * @void : main does not take any variables
+ * Description : This main program prints the sizes of bytes of each data type
+ * Return : returns 0 at end of the main function
  */
 
 int main(void)
