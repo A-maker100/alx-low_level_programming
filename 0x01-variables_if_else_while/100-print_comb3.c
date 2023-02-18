@@ -15,17 +15,16 @@ int main(void)
 	while (counter <= 57)
 	{
 		next = counter + 1;
-		
 		while (next <= 57)
 		{
 			putchar(counter);
 			putchar(next);
 
-			if( next == 57 && counter == 56)
+			if (next == 57 && counter == 56)
 			{
 				break;
 			}
-			else if((next != 57 && counter != 57) || (next == 57 && counter != 57) || (next != 56 && counter != 57))
+			else if ((next != 57 && counter != 57) || (next == 57 && counter != 57))
 			{
 				putchar(44);
 				putchar(32);
