@@ -5,7 +5,6 @@
  * Return: 0
  */
 #include<stdio.h>
-
 #include<string.h>
 void _puts(char *s)
 {
@@ -13,7 +12,7 @@ void _puts(char *s)
 
 	index = 0;
 
-	while (index != strlen(index))
+	while (index != strlen(s))
 	{
 		putchar(s[index]);
 		index++;
