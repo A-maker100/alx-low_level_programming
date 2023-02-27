@@ -1,5 +1,15 @@
 #include<stdio.h>
-void reset_to_98(int *n);
+
+/**
+ * reset_to_98 - Additional function in the program
+ * @n : the function takes n as a parameter
+ * Description : resets the value in n to 98
+ * Return: no return value; void
+ */
+void reset_to_98(int *n)
+{
+	*n = 98;
+}
 
 /**
  * main - Major function of the program
@@ -17,14 +27,4 @@ int main(void)
 	p = &number;
 	reset_to_98(p);
 	return (0);
-}
-/**
- * reset_to_98 - Additional function in the program
- * @n : the function takes n as a parameter
- * Description : resets the value in n to 98
- * Return: no return value; void
- */
-void reset_to_98(int *n)
-{
-	*n = 98;
 }
