@@ -17,11 +17,3 @@ void puts2(char *str)
 		putchar(str[index]);
 	}
 }
-
-int main(void)
-{
-	char *s = "This is interestingly interesting\n";
-	puts2(s);
-
-	return (0);
-}
