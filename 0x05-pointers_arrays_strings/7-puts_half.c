@@ -8,7 +8,8 @@
 #include<string.h>
 void puts_half(char *str)
 {
-	int index, length, half;
+	int index, half;
+	long int length;
 
 	length = strlen(str);
 	if (length % 2 == 0)
