@@ -8,12 +8,6 @@
 #include<string.h>
 void _puts(char *s)
 {
-	int index;
-	int length;
-
-	length = strlen(s);
-	for (index = 0; index < length - 1; index++)
-	{
-		putchar(s[index]);
-	}
+	puts(s);
 }
+
