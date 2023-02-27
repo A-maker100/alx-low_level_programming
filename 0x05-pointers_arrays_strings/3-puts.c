@@ -9,12 +9,14 @@
 void _puts(char *s)
 {
 	int index;
+	int length;
 
+	length = strlen(s);
 	index = 0;
 
-	while (index != strlen(s))
+
+	for (index; index < length; index++)
 	{
 		putchar(s[index]);
-		index++;
 	}
 }
