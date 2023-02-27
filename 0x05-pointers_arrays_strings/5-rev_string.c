@@ -24,7 +24,7 @@ void rev_string(char *s)
 
 int main(void)
 {
-	char *t = "welcome to my world";
+	char t[] = "welcome to my world";
 	rev_string(t);
 	printf("%s\n", t);
 
