@@ -5,13 +5,15 @@
  * Return: 0
  */
 #include<stdio.h>
+
+#include<string.h>
 void _puts(char *s)
 {
 	int index;
 
 	index = 0;
 
-	while(s[index] != '\0')
+	while (index != strlen(index))
 	{
 		putchar(s[index]);
 		index++;
