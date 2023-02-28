@@ -14,14 +14,11 @@ void print_array(int *a, int n)
 	{
 		if (counter == (n - 1))
 		{
-			putchar((a[counter] - '0'));
-			putchar(10);
+			printf("%i\n", a[counter]);
 		}
 		else
 		{
-			putchar((a[counter] - '0'));
-			putchar(44);
-			putchar(32);
+			putchar("%i, ", a[counter]);
 		}
 	}
 }
