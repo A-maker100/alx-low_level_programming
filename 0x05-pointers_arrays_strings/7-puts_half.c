@@ -16,7 +16,7 @@ void puts_half(char *str)
 	{
 		/* Even */
 		half = length / 2;
-		for (index = half + 1; index < length; index++)
+		for (index = half; index < length; index++)
 		{
 			putchar(str[index]);
 		}
@@ -24,7 +24,7 @@ void puts_half(char *str)
 	else
 	{
 		half = (length - 1) / 2;
-		for (index = half; index < length; index++)
+		for (index = half + 1; index < length; index++)
 		{
 			putchar(str[index]);
 		}
