@@ -14,15 +14,20 @@ void puts_half(char *str)
 	length = strlen(str);
 	if (length % 2 == 0)
 	{
+		/* Even */
 		half = length / 2;
+		for (index = half + 1; index < length; index++)
+		{
+			putchar(str[index]);
+		}
 	}
 	else
 	{
 		half = (length - 1) / 2;
-	}
-	for (index = half + 1; index < length; index++)
-	{
-		putchar(str[index]);
+		for (index = half; index < length; index++)
+		{
+			putchar(str[index]);
+		}
 	}
 
 	putchar(10);
