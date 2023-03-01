@@ -1,7 +1,7 @@
 /**
- * cap_string- capitalises all letters
- * @c: char pointer as a first parameter
- * Decription: capitalises all letters in a character string
+ * cap_string- capitalises all words in a string
+ * @c: string of characters
+ * Decription: capitalises all words letters in a character string
  * Return: char pointer string literal
  */
 #include<stdio.h>
@@ -10,38 +10,23 @@
 #include<string.h>
 char *cap_string(char *c)
 {
-	int length, index;
-	char *MAX;
+	int MARKS[13] = {32, 9, 10, 44, 59, 46, 33, 64, 34, 40, 41, 123, 125};
+	int length, index, marks_index;
+	int ch;
 
 	length = strlen(c);
-	MAX = malloc(length);
-
-	for (index = 0; index < length; index++)
+	c[0] = toupper(c[0]);
+	for (index = 1; index < length; index++)
 	{
-		
-		/* check for lower case characters and then convert only those to uppercase */
-		
-		if (islower(c[index]))
+		ch = c[index];
+		for (marks_index = 0; marks_index < 13; marks_index++)
 		{
-			MAX[index] = toupper(c[index]);
-		}
-		else
-		{	
-			MAX[index] = c[index];
+			if (ch == MARKS[marks_index])
+			{
+				ch = c[++index];
+				c[index] = toupper(c[index]);
+			}
 		}
 	}
-
-	return (MAX);
-}
-
-int main(void)
-{
-	char *s = "mgk";
-	char *r;
-
-	r = cap_string(s);
-
-	printf("%s\n", r);
-
-	return 0;
+	return (c);
 }
