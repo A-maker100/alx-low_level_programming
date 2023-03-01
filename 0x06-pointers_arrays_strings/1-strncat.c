@@ -1,6 +1,6 @@
 /**
  * _strncat-Major function in this program
- * @dest: the character string will we be concatenating to
+ * @dest: the string will we be concatenating to. assume it has space
  * @src: the string we will be taking values from
  * @n: number of bytes to take from src
  * Description: concatenates a limited number of characters
@@ -11,15 +11,9 @@
 #include<stdlib.h>
 char *_strncat(char *dest, char *src, int n)
 {
-	int length;
-	char *FINAL;
+	char *cPtr;
 
-	length = strlen(dest) + n;
+	cPtr = strncat(dest, src, n);
 
-	FINAL = malloc(length);
-	strcat(FINAL, dest);
-	strncat(FINAL, src, n);
-	dest = FINAL;
-	FINAL = NULL;
-	return (dest);
+	return (cPtr);
 }
