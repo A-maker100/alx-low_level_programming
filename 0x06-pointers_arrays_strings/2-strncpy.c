@@ -12,16 +12,9 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int length;
-	char *FINAL;
+	char *cPtr;
 
-	length = strlen(dest);
-	FINAL = malloc(length);
+	cPtr = strncpy(dest, src, n);
 
-	strncpy(FINAL, dest, strlen(dest));
-	strncpy(FINAL, src, n);
-
-	dest = FINAL;
-	FINAL = NULL;
-	return (dest);
+	return (cPtr);
 }
