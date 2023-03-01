@@ -10,22 +10,15 @@
 #include<stdlib.h>
 char *string_toupper(char *c)
 {
-	int character, length, index;
-	char *max;
+	int length, index;
 
 	length = strlen(c);
-	max = malloc(length);
-
 	for (index = 0; index < length; index++)
 	{
-		character = c[index];
-		/* Ensure that the character is lower case */
-		if (character >= 97)
+		if (islower(c[index]))
 		{
-			character -= 32;
+			c[index] = toupper(c[index]);
 		}
-		max[index] = character;
 	}
-
-	return (max);
+	return (c);
 }
