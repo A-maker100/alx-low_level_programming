@@ -10,14 +10,9 @@
 #include<string.h>
 char *_strcat(char *dest, char *src)
 {
-	int length;
-	char *FINAL;
+	char *cptr;
 
-	length = strlen(dest) + strlen(src) + 1;
-	FINAL = malloc(length);
-	strcat(FINAL, dest);
-	strcat(FINAL, src);
-	dest = FINAL;
-	FINAL = NULL;
-	return (dest);
+	cptr = strcat(dest, src);
+
+	return (cptr);
 }
