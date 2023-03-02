@@ -34,12 +34,18 @@ char *leet(char *c)
 				Leeted[index] = CHAR_ASCII[array_index];
 			}
 		}
+		c[index] = Leeted[index];
 	}
+	free(Leeted);
+	return (c);
+}
 
-	/* Update c as required */
-	for (array_index = 0; array_index < length; array_index++)
-	{
-		c[array_index] = Leeted[array_index];
-	}
-	return (Leeted);
+int main(void)
+{
+	char p[] = "Expect the best. Prepare for the worst. Capitalize on what comes\n";
+	leet(p);
+
+	printf("%s", p);
+
+	return 0;
 }
