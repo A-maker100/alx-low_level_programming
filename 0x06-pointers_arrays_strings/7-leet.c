@@ -39,13 +39,3 @@ char *leet(char *c)
 	free(Leeted);
 	return (c);
 }
-
-int main(void)
-{
-	char p[] = "Expect the best. Prepare for the worst. Capitalize on what comes\n";
-	leet(p);
-
-	printf("%s", p);
-
-	return 0;
-}
