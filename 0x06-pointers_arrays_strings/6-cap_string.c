@@ -11,9 +11,8 @@
 #include<stdbool.h>
 char *cap_string(char *c)
 {
-	char MARKS[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int length, index, marks_index;
-	int ch;
+	char MARKS[13] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int length, index, marks_index, ch;
 	bool flag;
 
 	length = strlen(c);
@@ -32,8 +31,7 @@ char *cap_string(char *c)
 			while (!isalnum(ch) && ch == MARKS[marks_index])
 			{
 				flag = true;
-				++index;
-				ch = c[index];
+				ch = c[++index];
 				if (isalnum(ch))
 				{
 					flag = false;
@@ -50,6 +48,5 @@ char *cap_string(char *c)
 			flag = true;
 		}
 	}
-
 	return (c);
 }
