@@ -35,5 +35,11 @@ char *leet(char *c)
 			}
 		}
 	}
+
+	/* Update c as required */
+	for (array_index = 0; array_index < length; array_index++)
+	{
+		c[array_index] = Leeted[array_index];
+	}
 	return (Leeted);
 }
