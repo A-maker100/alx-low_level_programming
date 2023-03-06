@@ -37,5 +37,6 @@ void print_chessboard(char (*a)[8])
 			}
 		}
 		putchar(10);
+		putchar(10);
 	}
 }
