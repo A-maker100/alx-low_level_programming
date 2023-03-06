@@ -11,3 +11,16 @@ unsigned int _strspn(char *s, char *accept)
 {
 	return (strspn(s, accept));
 }
+
+int main(void)
+{
+	char p[] = "Sisuka kude joe, asipheli";
+	char s[] = "Skill konquers just about-anything";
+	unsigned int length;
+
+	length = _strspn(p, s);
+
+	printf("%u\n", length);
+
+	return 1;
+}
