@@ -15,19 +15,19 @@ void print_chessboard(char (*a)[8])
 	{
 		for (iC = 0; iC < 8; iC++)
 		{
-			if(iR == 0)
+			if (iR == 0)
 			{
 				putchar(a[0][iC]);
 			}
-			else if(iR == 1)
+			else if (iR == 1)
 			{
 				putchar(a[1][iC]);
 			}
-			else if(iR == 6)
+			else if (iR == 6)
 			{
 				putchar(a[6][iR]);
 			}
-			else if(iR == 7)
+			else if (iR == 7)
 			{
 				putchar(a[7][iC]);
 			}
