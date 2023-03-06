@@ -2,7 +2,7 @@
  * print_chessboard - Major function in the program
  * @a: 2d array in a different format I have no idea about
  * Description: prints out the entire cheesboard
- * Return: no return value
+ * Return: void, no return value
  */
 #include<string.h>
 #include<stdio.h>
@@ -33,10 +33,13 @@ void print_chessboard(char (*a)[8])
 			}
 			else
 			{
-				putchar(32); /* prints space */
+				putchar(a[iR][iC]); /* prints space */
 			}
 		}
 		putchar(10);
-		putchar(10);
+		if (iR != 7)
+		{
+			putchar(10);
+		}
 	}
 }
