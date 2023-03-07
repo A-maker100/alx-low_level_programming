@@ -12,7 +12,7 @@ void print_diagsums(int *a, int size)
 	int i, length;
 	int Forward_sum, Reverse_sum;
 
-	length = size * size;
+	length = size;
 	Forward_sum = 0;
 	Reverse_sum = 0;
 
