@@ -1,21 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 /**
- * print_int - Helper function in this program
- * @number: input int
- * Description: prints the number using putchar
- * Return: void
- */
-void print_int(int number)
-{
-	if (number != 0)
-	{
-		print_int(number / 10);
-		putchar((number % 10) + '0');
-	}
-}
-/**
- * print_diagsums- Major function in this program
+ * print_diagsums-Major function in this program
  * @a: array
  * @size: number of cols and rows
  * Description: prints sums of diagonals
@@ -41,9 +27,5 @@ void print_diagsums(int *a, int size)
 	}
 
 	/* convert the numbers to strings in order to use _putchar */
-	print_int(Forward_sum);
-	putchar(44);
-	putchar(32);
-	print_int(Reverse_sum);
-	putchar(10);
+	printf("%i, %i\n", Forward_sum, Reverse_sum);
 }
