@@ -41,25 +41,9 @@ void print_diagsums(int *a, int size)
 	}
 
 	/* convert the numbers to strings in order to use _putchar */
-	
 	print_int(Forward_sum);
 	putchar(44);
 	putchar(32);
 	print_int(Reverse_sum);
 	putchar(10);
-}
-
-int main(void)
-{
-	int Matrix[5][5] =
-	{
-		{0, 1, 5, 12124, 1234},
-        {10, 11, 12, 123521, 12512},
-        {1000, 101, 102, 12545, 214543435},
-        {100, 1012451, 11102, 12545, 214543435},
-        {10, 12401, 10452, 11542545, 1214543435}
-	};
-	print_diagsums((int *)Matrix, 5);
-
-	return (0);
 }
