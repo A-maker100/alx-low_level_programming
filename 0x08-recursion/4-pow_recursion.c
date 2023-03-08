@@ -1,4 +1,22 @@
 /**
+ * powers - helper function in this program
+ * @S: base; first parameter
+ * @F: exponent; second parameter
+ * Description: raises S to the power of F
+ * Return: an integer result
+ */
+
+int powers(int S, int F)
+{
+	if (F == 0)
+	{
+		return (1);
+	}
+
+	return (S * powers(S, --F));
+}
+
+/**
  * _pow_recursion- Major function in program
  * @x: base; first parameter
  * @y: exponent; second parameter
@@ -6,18 +24,11 @@
  * Return: integer result
  */
 #include<stdio.h>
-#include<math.h>
-
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 	{
 		return (-1);
 	}
-	else if (y == 0)
-	{
-		return (1);
-	}
-
-	return (x * _pow_recursion(x, --y));
+	return (powers(x, y));
 }
