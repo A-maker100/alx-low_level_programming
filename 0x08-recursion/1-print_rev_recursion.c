@@ -32,5 +32,4 @@ void _print_rev_recursion(char *s)
 
 	IND = 0;
 	_rev_recursion(s, IND);
-	putchar(10);
 }
