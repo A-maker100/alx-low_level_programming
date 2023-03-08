@@ -14,14 +14,10 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	return(pow((double)x, (double)y));
-}
+	else if (y == 0)
+	{
+		return (1);
+	}
 
-int main(void)
-{
-	int X = 10, Y = 2, RES;
-
-	RES = _pow_recursion(X, Y);
-	printf("%d\n", RES);
-	return RES;
+	return (x * _pow_recursion(x, --y));
 }
