@@ -22,13 +22,13 @@ bool is_prime(int n, int index)
 }
 
 /**
- * _is_prime_number - Major function in this program
+ * is_prime_number - Major function in this program
  * @n: integer parameter
  * Description: determines if a number is prime number or not
  * Return: 0 if not, 1 if it is
  */
 
-int _is_prime_number(int n)
+int is_prime_number(int n)
 {
 	int IND;
 
