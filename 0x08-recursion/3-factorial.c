@@ -9,6 +9,10 @@
 
 int factorial(int n)
 {
+	if (n < 0)
+	{
+		return (-1);
+	} /* Error handling */
 	if (n == 0)
 	{
 		return (1);
@@ -19,16 +23,5 @@ int factorial(int n)
 		return (1);
 	}
 
-	return (n * factorial(n-1));
-}
-
-int main(void)
-{
-	int NUM = 10, fctrl;
-
-	fctrl = factorial(NUM);
-
-	printf("%d\n", fctrl);
-
-	return (0);
+	return (n * factorial(n - 1));
 }
