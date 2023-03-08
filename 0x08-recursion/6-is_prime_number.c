@@ -1,4 +1,4 @@
-
+#include<stdbool.h>
 /**
  *is_prime- Helper function in the program
  * @n: The original number
@@ -27,9 +27,6 @@ bool is_prime(int n, int index)
  * Description: determines if a number is prime number or not
  * Return: 0 if not, 1 if it is
  */
-
-#include<stdio.h>
-#include<stdbool.h>
 
 int _is_prime_number(int n)
 {
