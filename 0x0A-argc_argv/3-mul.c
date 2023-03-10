@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int para1, para2, product;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
