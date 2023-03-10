@@ -10,6 +10,12 @@
 int main(int argc, char *argv[])
 {
 
-	printf("%i\n", argc - 1);
+	int ind;
+
+	ind = sizeof(*argv) / sizeof(argv[0]);
+	if (argc == ind)
+	{
+		printf("%i\n", argc);
+	}
 	return (0);
 }
