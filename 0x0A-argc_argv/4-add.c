@@ -34,10 +34,7 @@ int main(int argc, char *argv[])
 	for (ind = 1; ind < argc; ind++)
 	{
 		num = atoi(argv[ind]);
-		if (num >= 0)
-		{
-			sum += num;
-		}
+		sum += num;
 	}
 	printf("%i\n", sum);
 	return (0);
