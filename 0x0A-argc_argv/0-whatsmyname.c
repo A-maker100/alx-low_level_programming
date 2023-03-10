@@ -1,4 +1,4 @@
-#include<stdio.h>
+/#include<stdio.h>
 /**
  * main-main function
  * @argc: counts number of arguments when program is being run
@@ -6,7 +6,7 @@
  * Description: uses argv to print out program name
  * Return: always 0
  */
-int main( int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *program_name;
 
