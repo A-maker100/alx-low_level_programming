@@ -20,6 +20,12 @@ char *create_array(unsigned int size, char c)
 	}
 
 	cPtr = (char *)malloc(size * sizeof(char));
+
+	/* Handling malloc's return */
+	if (cPtr == NULL)
+	{
+		return (NULL);
+	}
 	for (index = 0; index < limit; index++)
 	{
 		cPtr[index] = c;
