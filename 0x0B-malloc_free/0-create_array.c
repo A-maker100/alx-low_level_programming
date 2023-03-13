@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	cPtr = malloc(size * sizeof(char));
+	cPtr = (char *)malloc(size * sizeof(char));
 	for (index = 0; index < limit; index++)
 	{
 		cPtr[index] = c;
