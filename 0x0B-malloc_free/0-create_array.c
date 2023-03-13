@@ -11,14 +11,16 @@ char *create_array(unsigned int size, char c)
 {
 	char *cPtr;
 	int index;
+	int limit;
 
+	limit = size;
 	if (size == 0)
 	{
 		return (NULL);
 	}
 
 	cPtr = malloc(size * sizeof(char));
-	for (index = 0; index < size; index++)
+	for (index = 0; index < limit; index++)
 	{
 		cPtr[index] = c;
 	}
