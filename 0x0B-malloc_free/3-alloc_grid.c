@@ -1,17 +1,18 @@
 #include<string.h>
+#include<stdio.h>
 #include<stdlib.h>
+
 /**
  *alloc_grid-creates and initializes a 2d array
- * @height: number of rows
- * @width: number of columns
+ * @width: number of rows
+ * @height: number of columns
  *Description: creates a 2d array and initialises the grid with 0
  *Return: the allocated array
  */
 
-int **alloc_grid(int height, int width)
+int **alloc_grid(int width, int height)
 {
-	int R_ind, C_ind, ind;
-
+	int C_ind, ind;
 	int **ARRAY;
 
 	if (height <= 0 || width <= 0)
@@ -30,13 +31,10 @@ int **alloc_grid(int height, int width)
 		{
 			return (NULL);
 		}
-	}
-	/* grid ARRAY has been set up successfully */
-	for (R_ind = 0; R_ind < height; R_ind++)
-	{
+		/* Initialise the array */
 		for (C_ind = 0; C_ind < width; C_ind++)
 		{
-			ARRAY[R_ind][C_ind] = 0;
+			ARRAY[ind][C_ind] = 0;
 		}
 	}
 	return (ARRAY);
