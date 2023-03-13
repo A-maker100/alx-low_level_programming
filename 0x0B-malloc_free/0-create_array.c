@@ -9,12 +9,13 @@
 
 char *create_array(unsigned int size, char c)
 {
+	char *cPtr;
+	int index;
+
 	if (size == 0)
 	{
 		return (NULL);
 	}
-	char *cPtr;
-	int index;
 
 	cPtr = malloc(size * sizeof(char));
 	for (index = 0; index < size; index++)
