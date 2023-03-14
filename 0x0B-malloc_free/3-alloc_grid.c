@@ -1,4 +1,4 @@
-#include<string.h>
+]#include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -19,7 +19,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	ARRAY = (int **)malloc(height * sizeof(int));
+	ARRAY = (int **)malloc(height * sizeof(int *));
 	if (ARRAY == NULL)
 	{
 		return (NULL);
@@ -32,6 +32,9 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 		/* Initialise the array */
+	}
+	for (ind = 0; ind < height; ind++)
+	{
 		for (C_ind = 0; C_ind < width; C_ind++)
 		{
 			ARRAY[ind][C_ind] = 0;
